@@ -22,6 +22,18 @@ module Minitest
 
       define_method(test_name, &block)
     end
+
+    def setup(&block)
+      define_method(:setup) do
+        super(); instance_exec(&block)
+      end
+    end
+
+    def teardown(&block)
+      define_method(:teardown) do
+        instance_exec(&block); super()
+      end
+    end
   end
 
   Test.extend(Sugar)
