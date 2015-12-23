@@ -27,4 +27,6 @@ module Minitest
       end
     end
   end
+
+  Test.extend(Sugar)
 end
