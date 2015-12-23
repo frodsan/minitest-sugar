@@ -17,7 +17,7 @@ module Minitest
       test_name = sprintf("test_%s", name.gsub(/\s+/, "_"))
 
       if (instance_method(test_name) rescue false)
-        raise "#{test_name} is already defined in #{ self }"
+        raise "#{ test_name } is already defined in #{ self }"
       end
 
       define_method(test_name, &block)
