@@ -3,10 +3,6 @@ require "minitest/autorun"
 require "minitest/pride"
 require_relative "../lib/minitest/sugar"
 
-Minitest::Test.setup do
-  @foo = "foo"
-end
-
 class MinitestSugarTest < Minitest::Test
   test "defines a friendly human description" do
     assert true
@@ -25,7 +21,6 @@ class MinitestSugarTest < Minitest::Test
   end
 
   teardown do
-    assert_equal("foo", @foo)
     assert_equal("bar", @bar)
   end
 end
