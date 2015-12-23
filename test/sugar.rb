@@ -1,4 +1,4 @@
-gem "minitest", ">= 5.0.0"
+require "bundler/setup"
 require "minitest/autorun"
 require_relative "../lib/minitest/sugar"
 
