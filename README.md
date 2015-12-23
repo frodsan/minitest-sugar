@@ -18,7 +18,7 @@ class TruthTest < Minitest::Test
   # Define a test method using a String. Instead of
   # `def test_assert_the_truth`, do:
   test "assert the truth" do
-    assert(@truth)
+    assert @truth
   end
 
   teardown do

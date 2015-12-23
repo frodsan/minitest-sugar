@@ -23,12 +23,50 @@ module Minitest
       define_method(test_name, &block)
     end
 
+    # Public: Helper to define a +setup+ method.
+    #
+    # Examples
+    #
+    #   require "minitest/autorun"
+    #   require "minitest/sugar"
+    #
+    #   class TruthTest < Minitest::Test
+    #     setup do
+    #       @truth = true
+    #     end
+    #
+    #     test "assert the truth" do
+    #       assert @truth
+    #     end
+    #   end
+    #
     def setup(&block)
       define_method(:setup) do
         super(); instance_exec(&block)
       end
     end
 
+    # Public: Helper to define a +teardown+ method.
+    #
+    # Examples
+    #
+    #   require "minitest/autorun"
+    #   require "minitest/sugar"
+    #
+    #   class TruthTest < Minitest::Test
+    #     setup do
+    #       @truth = true
+    #     end
+    #
+    #     teardown do
+    #       @truth = nil
+    #     end
+    #
+    #     test "assert the truth" do
+    #       assert @truth
+    #     end
+    #   end
+    #
     def teardown(&block)
       define_method(:teardown) do
         instance_exec(&block); super()
