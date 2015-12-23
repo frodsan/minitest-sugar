@@ -1,14 +1,18 @@
 module Minitest
   module Sugar
-    # Allow to create tests in a more human readable form.
+    # Public: Helper to define a test method using a String.
     #
-    #  class TruthTest < Minitest::Test
-    #    extend Minitest::Sugar
+    # Examples
     #
-    #    test "assert the truth" do
-    #      assert true
-    #    end
-    #  end
+    #   require "minitest/autorun"
+    #   require "minitest/sugar"
+    #
+    #   class TruthTest < Minitest::Test
+    #     test "assert the truth" do
+    #       assert true
+    #     end
+    #   end
+    #
     def test(name, &block)
       test_name = "test_#{name.gsub(/\s+/,"_")}"
       defined   = instance_method(test_name) rescue false
