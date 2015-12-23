@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Francesco Rodriguez"]
   s.email       = ["frodsan@me.com"]
   s.homepage    = "https://github.com/frodsan/minitest-sugar"
-  s.license     = "Unlicense"
+  s.license     = "MIT"
 
   s.files = `git ls-files`.split("\n")
 
