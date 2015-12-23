@@ -1,7 +1,7 @@
 minitest-sugar
 ==============
 
-Define a Minitest 5+ test using a String.
+Useful helpers for Minitest 5+.
 
 Usage
 -----
@@ -11,9 +11,18 @@ require "minitest/autorun"
 require "minitest/sugar"
 
 class TruthTest < Minitest::Test
-  # instead of `def test_assert_the_truth` do:
+  setup do
+    @truth = true
+  end
+
+  # Define a test method using a String. Instead of
+  # `def test_assert_the_truth`, do:
   test "assert the truth" do
-    assert true
+    assert(@truth)
+  end
+
+  teardown do
+    @truth = nil
   end
 end
 ```
