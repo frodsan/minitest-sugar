@@ -1,6 +1,8 @@
+require_relative "lib/minitest/sugar/version"
+
 Gem::Specification.new do |s|
   s.name        = "minitest-sugar"
-  s.version     = "1.0.1"
+  s.version     = Minitest::Sugar::VERSION
   s.summary     = "Helper to define a test method using a String"
   s.description = "Enough sugar for your minitest diet"
   s.authors     = "Francesco Rodriguez"
