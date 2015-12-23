@@ -1,7 +1,7 @@
 minitest-sugar
 ==============
 
-Helper to define a test method using a String.
+Define a Minitest 5+ test using a String.
 
 Usage
 -----
