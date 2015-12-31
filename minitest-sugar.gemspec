@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.name        = "minitest-sugar"
   s.version     = Minitest::Sugar::VERSION
   s.summary     = "Useful helpers for Minitest 5+"
-  s.description = "Enough sugar for your minitest diet"
-  s.authors     = "Francesco Rodriguez"
+  s.description = "Enough sugar for your Minitest diet"
+  s.author      = "Francesco Rodriguez"
   s.email       = "frodsan@protonmail.ch"
   s.homepage    = "https://github.com/frodsan/minitest-sugar"
   s.license     = "MIT"
