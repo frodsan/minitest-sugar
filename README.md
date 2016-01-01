@@ -1,7 +1,28 @@
-minitest-sugar
+minitest-sugar [![Build Status](https://travis-ci.org/frodsan/minitest-sugar.svg)](https://travis-ci.org/frodsan/minitest-sugar)
 ==============
 
 Useful helpers for Minitest 5+.
+
+Installation
+------------
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem "minitest-sugar"
+```
+
+And then execute:
+
+```
+$ bundle
+```
+
+Or install it yourself as:
+
+```
+$ gem install minitest-sugar
+```
 
 Usage
 -----
@@ -28,9 +49,33 @@ class TruthTest < Minitest::Test
 end
 ```
 
-Installation
+Contributing
 ------------
 
+Fork the project with:
+
 ```
-$ gem install minitest-sugar
+$ git clone git@github.com:frodsan/minitest-sugar.git
 ```
+
+To install dependencies, use:
+
+```
+$ bundle install
+```
+
+To run the test suite, do:
+
+```
+$ rake test
+```
+
+For bug reports and pull requests use [GitHub][issues].
+
+License
+-------
+
+This gem is released under the [MIT License][mit].
+
+[mit]: http://www.opensource.org/licenses/MIT
+[issues]: https://github.com/frodsan/minitest-sugar/issues
