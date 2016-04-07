@@ -1,4 +1,4 @@
-minitest-sugar [![Build Status](https://travis-ci.org/frodsan/minitest-sugar.svg)](https://travis-ci.org/frodsan/minitest-sugar)
+minitest-sugar [![Build Status](https://gitlab.com/frodsan/minitest-sugar/badges/master/build.svg)](https://gitlab.com/frodsan/minitest-sugar/builds)
 ==============
 
 Useful helpers for Minitest 5+.
@@ -55,7 +55,7 @@ Contributing
 Fork the project with:
 
 ```
-$ git clone git@github.com:frodsan/minitest-sugar.git
+$ git clone git@gitlab.com:frodsan/minitest-sugar.git
 ```
 
 To install dependencies, use:
@@ -70,7 +70,7 @@ To run the test suite, do:
 $ rake test
 ```
 
-For bug reports and pull requests use [GitHub][issues].
+For bug reports and pull requests use [GitLab][issues].
 
 License
 -------
@@ -78,4 +78,4 @@ License
 This gem is released under the [MIT License][mit].
 
 [mit]: http://www.opensource.org/licenses/MIT
-[issues]: https://github.com/frodsan/minitest-sugar/issues
+[issues]: https://gitlab.com/frodsan/minitest-sugar/issues
