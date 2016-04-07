@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "bundler/setup"
 require "minitest/autorun"
 require "minitest/pride"
@@ -9,10 +11,10 @@ class MinitestSugarTest < Minitest::Test
   end
 
   test "raises if the name is already taken" do
-    self.class.test("name") { }
+    self.class.test("name") {}
 
     assert_raises(RuntimeError) do
-      self.class.test("name") { }
+      self.class.test("name") {}
     end
   end
 

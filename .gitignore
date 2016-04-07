@@ -1,4 +1,3 @@
-.bundle/
-pkg/
-
-Gemfile.lock
+/.bundle
+/.rubocop-*
+/Gemfile.lock

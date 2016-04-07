@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Minitest
   module Sugar
     # Public: Helper to define a test method using a String.
@@ -14,9 +16,9 @@ module Minitest
     #   end
     #
     def test(name, &block)
-      test_name = sprintf("test_%s", name.gsub(/\s+/, "_"))
+      test_name = format("test_%s", name.gsub(/\s+/, "_"))
 
-      if (instance_method(test_name) rescue false)
+      if method_defined?(test_name)
         raise "#{ test_name } is already defined in #{ self }"
       end
 
@@ -42,7 +44,9 @@ module Minitest
     #
     def setup(&block)
       define_method(:setup) do
-        super(); instance_exec(&block)
+        super()
+
+        instance_exec(&block)
       end
     end
 
@@ -69,7 +73,9 @@ module Minitest
     #
     def teardown(&block)
       define_method(:teardown) do
-        instance_exec(&block); super()
+        instance_exec(&block)
+
+        super()
       end
     end
   end
