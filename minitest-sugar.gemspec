@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description = "Enough sugar for your Minitest diet"
   s.author      = "Francesco Rodríguez"
   s.email       = "hello@frodsan.com"
-  s.homepage    = "https://gitlab.com/frodsan/minitest-sugar"
+  s.homepage    = "https://github.com/frodsan/minitest-sugar"
   s.license     = "MIT"
 
   s.files       = Dir["LICENSE", "README.md", "lib/**/*.rb"]
