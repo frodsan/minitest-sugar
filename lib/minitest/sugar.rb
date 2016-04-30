@@ -16,7 +16,7 @@ module Minitest
     #   end
     #
     def test(name, &block)
-      test_name = format("test_%s", name.gsub(/\s+/, "_"))
+      test_name = sprintf("test_%s", name.gsub(/\s+/, "_"))
 
       if method_defined?(test_name)
         raise "#{ test_name } is already defined in #{ self }"
