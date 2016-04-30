@@ -1,4 +1,4 @@
-minitest-sugar
+minitest-sugar [![Build Status](https://travis-ci.org/frodsan/minitest-sugar.svg)](https://travis-ci.org/frodsan/minitest-sugar)
 ==============
 
 Useful helpers for Minitest 5+.
